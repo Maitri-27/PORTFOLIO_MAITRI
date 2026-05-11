@@ -1,27 +1,40 @@
-const links = document.querySelectorAll('.site-nav a');
-const pageSections = document.querySelectorAll('.page-section');
+// Mobile Menu Toggle
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
 
-function showSection(id) {
-  pageSections.forEach((section) => {
-    section.classList.toggle('active', section.id === id);
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Close menu when a link is clicked
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
   });
 }
 
-links.forEach((link) => {
-  link.addEventListener('click', (event) => {
-    const targetId = link.getAttribute('href').slice(1);
-    const targetSection = document.getElementById(targetId);
-
-    if (targetSection) {
-      event.preventDefault();
-      showSection(targetId);
-      window.location.hash = targetId;
+// Smooth scroll behavior for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   });
 });
 
-window.addEventListener('load', () => {
-  const hash = window.location.hash.slice(1);
-  const validSection = Array.from(pageSections).some((section) => section.id === hash);
-  showSection(validSection ? hash : 'home');
+// Add scroll effect to navbar
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) {
+    navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.3)';
+  } else {
+    navbar.style.boxShadow = 'none';
+  }
 });

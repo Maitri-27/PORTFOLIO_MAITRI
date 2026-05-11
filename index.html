@@ -3,104 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maitri Portfolio</title>
+    <title>Maitri Patel - QA Engineer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div>
-          <h1>Maitri</h1>
-          <p>Welcome to my portfolio.</p>
+    <!-- NAVIGATION HEADER -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#home">Maitri</a>
         </div>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#home">Home</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#activities">Activities</a>
-          <a href="#contact">Contact</a>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
 
-    <main class="container">
-      <section class="hero page-section active" id="home">
-        <img class="profile-photo" src="image.png" alt="Photo of Maitri" />
-        <div class="home-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p>Quisque vestibulum velit sit amet mi elementum, a tristique augue fermentum.</p>
-          <p>Phasellus aliquet ligula a leo consequat, ut egestas nisl volutpat.</p>
-          <p>Donec in nisl a justo vehicula tincidunt eget a orci.</p>
-          <p>Praesent sed sapien et purus hendrerit varius sed at ipsum.</p>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Maitri Brijeshkumar Patel</h1>
+            <p class="role">QA Engineer & Software Quality Specialist</p>
+            <p class="bio">Passionate about quality assurance, automation testing, and building robust systems. 2+ years of experience in manual testing, API validation, and CI/CD pipelines.</p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Get In Touch</a>
+              <a href="#projects" class="btn btn-secondary">View My Work</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="image.png" alt="Maitri Patel" />
+          </div>
         </div>
       </section>
 
-      <section id="experience" class="section page-section">
-        <h3>Experience</h3>
-        <div class="card-grid">
-          <article class="card">
-            <h4>Frontend Developer</h4>
-            <p>Designed responsive UI and polished interactions for web applications.</p>
-          </article>
-          <article class="card">
-            <h4>Project Collaborator</h4>
-            <p>Worked closely with teams to deliver accessible, user-focused digital experiences.</p>
-          </article>
+      <!-- ABOUT SECTION -->
+      <section class="about" id="about">
+        <div class="section-container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <p>QA Engineer with 2+ years of professional experience in manual and exploratory testing, API validation, and comprehensive defect management across diverse technology platforms.</p>
+            <p>Proficient in Selenium test automation, Postman REST API testing, and Jenkins CI/CD pipeline monitoring with hands-on expertise in functional, regression, and system-level testing.</p>
+            <p>Currently pursuing Master of Engineering at Lakehead University with specialized coursework in Agile methodologies, Software Construction, and Machine Learning applications.</p>
+            <p>Developed a real-time fire detection system using CNN, TensorFlow, and OpenCV, achieving 95%+ accuracy and implementing comprehensive test coverage with fault-injection scenarios.</p>
+          </div>
         </div>
       </section>
 
-      <section id="projects" class="section page-section">
-        <h3>Projects</h3>
-        <div class="card-grid">
-          <article class="card">
-            <h4>Portfolio Template</h4>
-            <p>A versatile starter site with responsive layout and polished visuals.</p>
-          </article>
-          <article class="card">
-            <h4>Interactive UI</h4>
-            <p>A modern interface built with clean CSS and smooth scrolling behaviors.</p>
-          </article>
+      <!-- SKILLS SECTION -->
+      <section class="skills" id="skills">
+        <div class="section-container">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Testing & QA</h3>
+              <p>Manual & Exploratory Testing, Functional, Integration, System, Regression, Performance, API Testing</p>
+            </div>
+            <div class="skill-card">
+              <h3>Automation</h3>
+              <p>Selenium, Jenkins, Google Test, Shell Scripting</p>
+            </div>
+            <div class="skill-card">
+              <h3>API & Protocols</h3>
+              <p>REST, Postman, HTTP/S, DNS, TCP/IP, IPv4/IPv6, SSL/TLS</p>
+            </div>
+            <div class="skill-card">
+              <h3>Languages</h3>
+              <p>Python, Java, JavaScript, SQL</p>
+            </div>
+            <div class="skill-card">
+              <h3>AI/ML</h3>
+              <p>TensorFlow, Keras, OpenCV</p>
+            </div>
+            <div class="skill-card">
+              <h3>Tools & Agile</h3>
+              <p>Jira, Confluence, Git, Linux, Windows, Scrum</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="education" class="section page-section">
-        <h3>Education</h3>
-        <div class="card-grid">
-          <article class="card">
-            <h4>Web Development Bootcamp</h4>
-            <p>Completed hands-on training in HTML, CSS, JavaScript, and frontend frameworks.</p>
-          </article>
-          <article class="card">
-            <h4>Design Coursework</h4>
-            <p>Studied visual systems, responsive layout, and user-centered design principles.</p>
-          </article>
+      <!-- EXPERIENCE SECTION -->
+      <section class="experience" id="experience">
+        <div class="section-container">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Quality Analyst</h3>
+                <p class="company">Space-O Technologies, Ahmedabad, India</p>
+                <p class="date">Jan 2021 – Dec 2022</p>
+                <ul>
+                  <li>Took ownership of full regression suite, designed test plans, executed functional, integration, and system testing</li>
+                  <li>Introduced Selenium + Python automation scripts via Jenkins CI/CD</li>
+                  <li>Validated network protocols using Wireshark; resolved bottlenecks from timeout misconfigurations</li>
+                  <li>Contributed to Secure SDLC with vulnerability assessments and AAA verification</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Customer Service Manager</h3>
+                <p class="company">Walmart Canada, Ontario, Canada</p>
+                <p class="date">Jan 2024 – Present</p>
+                <ul>
+                  <li>Applied root cause analysis to diagnose POS and payment terminal failures</li>
+                  <li>Gathered operational requirements and translated into process improvements</li>
+                  <li>Led cross-functional team of 10+ associates through process redesign</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="activities" class="section page-section">
-        <h3>Extra Activities</h3>
-        <div class="card-grid">
-          <article class="card">
-            <h4>Open Source Contributor</h4>
-            <p>Contributed improvements to community projects and shared reusable UI patterns.</p>
-          </article>
-          <article class="card">
-            <h4>Tech Events</h4>
-            <p>Participated in hackathons, workshops, and developer meetups.</p>
-          </article>
+      <!-- PROJECTS SECTION -->
+      <section class="projects" id="projects">
+        <div class="section-container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Momento - NFC Smart Jewelry App</h3>
+                <p class="tech">React Native • Node.js • MongoDB</p>
+              </div>
+              <p>Tested React Native mobile app and React.js admin portal for NFC-based smart jewelry. Validated NFC synchronization, identified sync failures, and performed cross-platform testing on iOS and Android.</p>
+            </div>
+            <div class="project-card">
+              <div class="project-header">
+                <h3>The Observant Mom</h3>
+                <p class="tech">Web & Mobile App</p>
+              </div>
+              <p>Performed functional and usability testing for child developmental milestone tracker. Validated user flows across multiple browsers and devices, identified UI inconsistencies.</p>
+            </div>
+            <div class="project-card">
+              <div class="project-header">
+                <h3>Intelligent Fire Detection System</h3>
+                <p class="tech">Python • TensorFlow • OpenCV • Flask</p>
+              </div>
+              <p>Evaluated model architectures and selected lightweight CNN for edge deployment. Achieved 95%+ accuracy with comprehensive test coverage and fault injection, reducing false-positives by 30%.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section page-section">
-        <h3>Contact</h3>
-        <p>Want to collaborate? Send an email to <a href="mailto:hello@example.com">hello@example.com</a> or connect on LinkedIn.</p>
+      <!-- EDUCATION SECTION -->
+      <section class="education" id="education">
+        <div class="section-container">
+          <h2 class="section-title">Education</h2>
+          <div class="education-grid">
+            <div class="education-card">
+              <h3>Master of Engineering</h3>
+              <p class="school">Lakehead University</p>
+              <p class="details">Electrical & Computer Engineering • 2024 – 2025</p>
+              <p>Agile Software Development, Software Construction, Machine Learning Applications</p>
+            </div>
+            <div class="education-card">
+              <h3>Bachelor of Engineering</h3>
+              <p class="school">Gujarat Technological University</p>
+              <p class="details">Computer Engineering • 2017 – 2021</p>
+              <p>Certificate of Distinction — 3rd Rank in Batch</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact" id="contact">
+        <div class="section-container">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="contact-intro">I'm always interested in hearing about new opportunities and challenges.</p>
+          <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:maitripatel2712@gmail.com">maitripatel2712@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+18073576262">+1 807-357-6262</a></p>
+            <p><strong>Location:</strong> Ottawa, Ontario, Canada</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/maitri-patel" target="_blank">linkedin.com/in/maitri-patel</a></p>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; 2026 Maitri. Built with a clean starter template.</p>
+    <footer class="footer">
+      <div class="section-container">
+        <p>&copy; 2026 Maitri Patel. All rights reserved.</p>
       </div>
     </footer>
 

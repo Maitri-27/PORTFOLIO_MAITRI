@@ -11,118 +11,210 @@
     <header class="navbar">
       <div class="nav-container">
         <div class="logo">
-          <a href="#home">Maitri</a>
+          <div class="logo-initials">MP</div>
+          <div class="logo-text">
+            <div class="logo-name">Maitri Patel</div>
+            <div class="logo-title">QA Engineer</div>
+          </div>
         </div>
         <nav class="nav-menu" id="navMenu">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#experience" class="nav-link">Experience</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#home" class="nav-link" data-section="home">Home</a>
+          <a href="#about" class="nav-link" data-section="about">My Story</a>
+          <a href="#services" class="nav-link" data-section="services">What I Bring</a>
+          <a href="#experience" class="nav-link" data-section="experience">Professional Journey</a>
+          <a href="#projects" class="nav-link" data-section="projects">Key Achievements</a>
+          <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+          <a href="#contact" class="nav-link" data-section="contact">Get in Touch</a>
         </nav>
         <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
           <span></span>
         </div>
-      </div>
+     </div>
     </header>
 
     <main>
       <!-- HERO SECTION -->
-      <section class="hero" id="home">
+      <section class="hero active" id="home">
         <div class="hero-content">
           <div class="hero-text">
-            <h1>Maitri Brijeshkumar Patel</h1>
-            <p class="role">QA Engineer & Software Quality Specialist</p>
-            <p class="bio">Passionate about quality assurance, automation testing, and building robust systems. 2+ years of experience in manual testing, API validation, and CI/CD pipelines.</p>
+            <h1>Maitri Patel</h1>
+            <p class="role">Quality Assurance Specialist & Automation Enthusiast</p>
+            <p class="bio">Dedicated Quality Assurance professional with expertise in manual testing, automation testing, and comprehensive software validation. Proficient in functional testing, regression testing, performance testing, API testing, and security testing. Skilled in Selenium automation, JMeter load testing, Postman API validation, and CI/CD integration with Jenkins. Committed to delivering high-quality software through meticulous test planning, defect tracking with Jira, and cross-functional collaboration. Experienced in Agile/Scrum methodologies, risk-based testing, and ensuring user-centric digital experiences.</p>
             <div class="hero-buttons">
-              <a href="#contact" class="btn btn-primary">Get In Touch</a>
-              <a href="#projects" class="btn btn-secondary">View My Work</a>
+              <a href="https://www.linkedin.com/in/maitri-patel-41944a191" target="_blank" class="btn btn-secondary">View LinkedIn</a>
             </div>
           </div>
           <div class="hero-image">
             <img src="image.png" alt="Maitri Patel" />
           </div>
         </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span>1200+</span>
+            <p>Test cases designed</p>
+          </div>
+          <div class="stat-card">
+            <span>300+</span>
+            <p>Critical defects identified</p>
+          </div>
+          <div class="stat-card">
+            <span>20+</span>
+            <p>Projects supported</p>
+          </div>
+        </div>
       </section>
 
-      <!-- ABOUT SECTION -->
       <section class="about" id="about">
         <div class="section-container">
-          <h2 class="section-title">About Me</h2>
-          <div class="about-content">
-            <p>QA Engineer with 2+ years of professional experience in manual and exploratory testing, API validation, and comprehensive defect management across diverse technology platforms.</p>
-            <p>Proficient in Selenium test automation, Postman REST API testing, and Jenkins CI/CD pipeline monitoring with hands-on expertise in functional, regression, and system-level testing.</p>
-            <p>Currently pursuing Master of Engineering at Lakehead University with specialized coursework in Agile methodologies, Software Construction, and Machine Learning applications.</p>
-            <p>Developed a real-time fire detection system using CNN, TensorFlow, and OpenCV, achieving 95%+ accuracy and implementing comprehensive test coverage with fault-injection scenarios.</p>
+          <h2 class="section-title">Personal Stories</h2>
+          <div class="about-content stories-grid">
+            <div class="story-card">
+              <h3>Overcoming a Challenge — The Automation Wall</h3>
+              <p>When I first encountered automation testing, I hit a wall hard. The syntax confused me, the frameworks felt overwhelming, and every tutorial assumed I already knew things I didn't. I could've stayed comfortable in manual testing. Instead, I gave myself 30 minutes every morning before work — just learning, breaking things, learning again. Three months later, I was writing stable scripts and teaching a junior tester the same ropes. The wall didn't move. I climbed it.</p>
+            </div>
+            <div class="story-card">
+              <h3>Learning a New Skill — Tools Don't Scare Me Anymore</h3>
+              <p>I used to think being a QA meant knowing one set of tools really well. Then a project demanded Selenium, another needed Postman, another wanted Cypress. Each time, I had to learn fast and apply faster. Now I don't see a new tool as a threat — I see it as a new language to pick up. The skill underneath the tools — systematic thinking and curiosity — never changes. That's what I actually learned.</p>
+            </div>
+            <div class="story-card">
+              <h3>Team Moments — The Developer Who Hated My Bug Reports (Then Didn't)</h3>
+              <p>There was a developer on my team who'd push back on almost every bug I raised. Tense at first. But I started changing how I reported — adding screen recordings, steps in plain language, impact context. Slowly, our dynamic flipped. He started pinging me before shipping features, asking "anything look off to you?" Quality isn't one person's job. That collaboration taught me it's a culture you build, one bug report at a time.</p>
+            </div>
+            <div class="story-card">
+              <h3>Career Transition — I Didn't Plan to Be a QA Engineer</h3>
+              <p>I didn't grow up dreaming of test cases. My path here was a series of "let me try this" moments. But when I found QA, something clicked — it combined my attention to detail, love for problem-solving, and genuinely caring about the end user's experience. I wasn't just testing software. I was making sure someone's workday, checkout, or medical record didn't break. That purpose? That's what kept me in it.</p>
+            </div>
+          </div>
+
+          <h2 class="section-title">Work Stories</h2>
+          <div class="about-content stories-grid">
+            <div class="story-card">
+              <h3>The Bug That Almost Shipped on a Friday</h3>
+              <p>It was 4:47 PM on a Friday. The team was wrapping up. I ran one final regression check — a habit I'd built even when everyone said "it's fine." And there it was: a critical payment flow bug that would have hit thousands of users over the weekend. Nobody asked me to run that check. That's just what QA means to me — not a gatekeeper, but the last line of care.</p>
+            </div>
+            <div class="story-card">
+              <h3>When I Broke the Build (On Purpose)</h3>
+              <p> Manual testing shows you where things break. Automation shows you when — and that changes everything.Nobody tells you automation is humbling at first. You write a script, it fails, you fix it, it fails differently. But somewhere in that loop I stopped fighting the process and started trusting it — and that's when I actually became a better QA engineer. Breaking things on purpose, systematically, repeatedly — that's not chaos. That's how you build something you can actually stand behind.</p>
+            </div>
+            <div class="story-card">
+              <h3>The Test Case Nobody Wrote</h3>
+              <p>Once I joined a project mid-sprint. No documentation. No test plan. Just a Figma file and a prayer. I mapped out 60+ test cases from scratch in two days, collaborating with the dev and design teams to fill the gaps. The product launched clean. That experience taught me that great QA isn't about following a checklist — it's about asking the right questions before the checklist even exists.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- SKILLS SECTION -->
-      <section class="skills" id="skills">
+      <section class="services" id="services">
         <div class="section-container">
-          <h2 class="section-title">Technical Skills</h2>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <h3>Testing & QA</h3>
-              <p>Manual & Exploratory Testing, Functional, Integration, System, Regression, Performance, API Testing</p>
-            </div>
-            <div class="skill-card">
-              <h3>Automation</h3>
-              <p>Selenium, Jenkins, Google Test, Shell Scripting</p>
-            </div>
-            <div class="skill-card">
-              <h3>API & Protocols</h3>
-              <p>REST, Postman, HTTP/S, DNS, TCP/IP, IPv4/IPv6, SSL/TLS</p>
-            </div>
-            <div class="skill-card">
-              <h3>Languages</h3>
-              <p>Python, Java, JavaScript, SQL</p>
-            </div>
-            <div class="skill-card">
-              <h3>AI/ML</h3>
-              <p>TensorFlow, Keras, OpenCV</p>
-            </div>
-            <div class="skill-card">
-              <h3>Tools & Agile</h3>
-              <p>Jira, Confluence, Git, Linux, Windows, Scrum</p>
-            </div>
+          <div class="script-panel">
+            <p class="script-comment">🧾 The QA Receipt</p>
+            <pre class="script-block script-scroll">
+--------------------------------
+        WHAT YOU'RE GETTING
+--------------------------------
+Critical Thinking        x ∞
+Automation Scripts       x plenty
+Bug Reports (clear)      x always
+Awkward "What If" Questions x daily
+Team Collaboration       x every sprint
+--------------------------------
+TOTAL VALUE:             Priceless
+"No defects were harmed
+ in the making of this portfolio."
+--------------------------------
+            </pre>
+          </div>
+
+          <div class="script-panel">
+            <p class="script-comment">The Bug Report — About Me</p>
+            <pre class="script-block script-scroll">
+Title: QA Engineer — Full Stack Tester
+Severity: High Value
+Status: Available
+Environment: Any team, any stack
+
+Description:
+Comes with built-in attention to detail,
+cross-browser thinking, and an inability
+to ignore edge cases.
+
+Steps to Reproduce:
+1. Give me a product to test
+2. Watch what happens
+
+Expected Result: Clean release
+Actual Result: Clean release
+            </pre>
+          </div>
+
+          <div class="script-panel">
+            <p class="script-comment">Loading... What I Bring</p>
+            <pre class="script-block">
+> Loading... What I Bring > Initializing QA Engineer...
+> Loading manual testing....... ✓
+> Loading automation skills.... ✓
+> Loading Selenium, Cypress..... ✓
+> Loading bug radar............. ✓
+> Loading team collaboration.... ✓
+> Loading "one last check" habit ✓
+> Loading obsessive attention
+  to detail..................... ✓
+
+> All systems ready.
+> Bugs? Not on my watch.
+            </pre>
           </div>
         </div>
       </section>
 
-      <!-- EXPERIENCE SECTION -->
       <section class="experience" id="experience">
         <div class="section-container">
-          <h2 class="section-title">Experience</h2>
+          <h2 class="section-title">Professional Journey</h2>
           <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <h3>Customer Experience Specialist - Retail and Store Management</h3>
+                <p class="company">Walmart Canada, Ontario, Canada</p>
+                <p class="date">2024 – 2026</p>
+                <ul>
+                  <li>Applied root cause analysis to diagnose POS and payment terminal failures, ensuring minimal downtime</li>
+                  <li>Gathered operational requirements and translated them into actionable process improvements</li>
+                  <li>Led cross-functional team of 10+ associates through process redesign and operational excellence initiatives</li>
+                  <li>Managed retail store operations, optimizing customer experience and operational efficiency</li>
+                  <li>Implemented quality assurance methodologies in retail processes to enhance service delivery</li>
+                  <li>Trained and mentored team members on best practices for customer service and operational procedures</li>
+                </ul>
+              </div>
+            </div>
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
                 <h3>Quality Analyst</h3>
                 <p class="company">Space-O Technologies, Ahmedabad, India</p>
-                <p class="date">Jan 2021 – Dec 2022</p>
+                <p class="date">2021 – 2022</p>
                 <ul>
-                  <li>Took ownership of full regression suite, designed test plans, executed functional, integration, and system testing</li>
-                  <li>Introduced Selenium + Python automation scripts via Jenkins CI/CD</li>
-                  <li>Validated network protocols using Wireshark; resolved bottlenecks from timeout misconfigurations</li>
-                  <li>Contributed to Secure SDLC with vulnerability assessments and AAA verification</li>
+                  <li>Designed and executed comprehensive test plans covering functional, integration, system, and regression testing using industry-standard methodologies and test case generation techniques</li>
+                  <li>Developed and maintained automated test scripts using Selenium WebDriver with Python, integrated into Jenkins CI/CD pipeline for continuous testing and early defect detection</li>
+                  <li>Performed performance and load testing using Apache JMeter to simulate user traffic, identify bottlenecks, and ensure application stability under high load conditions</li>
+                  <li>Managed defect tracking and lifecycle using Jira, documenting bugs with detailed reproduction steps, severity levels, and collaborating with developers for timely resolution</li>
+                  <li>Conducted API testing using Postman for RESTful services, validated JSON responses, and ensured seamless integration between frontend and backend components</li>
                 </ul>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-content">
-                <h3>Customer Service Manager</h3>
-                <p class="company">Walmart Canada, Ontario, Canada</p>
-                <p class="date">Jan 2024 – Present</p>
+                <h3>Chairperson - WIE IEEE</h3>
+                <p class="company">IEEE Society & WIE IEEE University Branch</p>
+                <p class="date">2019 – 2020</p>
                 <ul>
-                  <li>Applied root cause analysis to diagnose POS and payment terminal failures</li>
-                  <li>Gathered operational requirements and translated into process improvements</li>
-                  <li>Led cross-functional team of 10+ associates through process redesign</li>
+                  <li>Led the Women in Engineering (WIE) student branch, organizing technical and non-technical events for university students</li>
+                  <li>Collaborated with other IEEE branches to coordinate joint events and knowledge-sharing sessions</li>
+                  <li>Managed event planning, team coordination, and technical workshops to promote engineering education</li>
+                  <li>Fostered community engagement and mentorship opportunities for students in technology fields</li>
                 </ul>
               </div>
             </div>
@@ -130,67 +222,134 @@
         </div>
       </section>
 
-      <!-- PROJECTS SECTION -->
       <section class="projects" id="projects">
         <div class="section-container">
-          <h2 class="section-title">Featured Projects</h2>
+          <h2 class="section-title">Key Achievements</h2>
+
+          <h3 class="subsection-title">Featured Projects</h3>
           <div class="projects-grid">
             <div class="project-card">
               <div class="project-header">
                 <h3>Momento - NFC Smart Jewelry App</h3>
                 <p class="tech">React Native • Node.js • MongoDB</p>
+                <a href="https://www.spaceotechnologies.com/case-study/smart-nfc-jewelry-app-solution/" target="_blank" class="project-link">View Case Study</a>
               </div>
-              <p>Tested React Native mobile app and React.js admin portal for NFC-based smart jewelry. Validated NFC synchronization, identified sync failures, and performed cross-platform testing on iOS and Android.</p>
+              <p>World's first smart NFC jewelry app that allows users to store up to 3GB of precious memories in NFC lockets. Tested React Native mobile app, React.js admin portal, and web portal. Validated NFC synchronization between jewelry and app, resolved ownership tracking issues, and performed cross-platform testing on iOS and Android. Key features tested include scan gem, share memories, link gems, add photos/audio/text, notifications, lock gem, ownership transfer, customer management, and e-commerce functionality. The app has achieved 1000+ downloads and continues to grow rapidly.</p>
             </div>
             <div class="project-card">
               <div class="project-header">
                 <h3>The Observant Mom</h3>
                 <p class="tech">Web & Mobile App</p>
               </div>
-              <p>Performed functional and usability testing for child developmental milestone tracker. Validated user flows across multiple browsers and devices, identified UI inconsistencies.</p>
+              <p>Online available web and mobile application for child developmental milestone tracking. Performed comprehensive functional and usability testing to ensure parents can easily monitor their children's development progress. Validated user flows across multiple browsers and devices, identified and resolved UI inconsistencies, and ensured seamless user experience for tracking milestones, developmental assessments, and growth patterns. The application is live and accessible to users, providing valuable insights for child development monitoring.</p>
             </div>
             <div class="project-card">
               <div class="project-header">
                 <h3>Intelligent Fire Detection System</h3>
                 <p class="tech">Python • TensorFlow • OpenCV • Flask</p>
               </div>
-              <p>Evaluated model architectures and selected lightweight CNN for edge deployment. Achieved 95%+ accuracy with comprehensive test coverage and fault injection, reducing false-positives by 30%.</p>
+              <p>Evaluated model architectures and selected lightweight CNN for edge deployment. Achieved 95%+ accuracy with comprehensive test coverage and fault injection testing, reducing false-positives by 30%. Validated real-time fire detection capabilities and system reliability under various environmental conditions.</p>
+            </div>
+          </div>
+
+          <h3 class="subsection-title">Professional Milestones</h3>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <div class="achievement-image">
+                <img src="images/space o star performer.jpg" alt="Star Performer Award" />
+              </div>
+              <h3>Excellence in Quality Assurance - Star Performer</h3>
+              <p>Awarded the prestigious Star Performer recognition at Space-O Technologies for consistently exceeding expectations in quality assurance. Led critical testing initiatives that prevented production incidents, implemented automation frameworks that reduced testing time by 60%, and mentored junior team members to elevate overall team performance. This achievement represents not just technical excellence but leadership, innovation, and an unwavering commitment to delivering flawless software experiences to end users.</p>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-image">
+                <img src="images/gtu topper.jpg" alt="GTU Topper" />
+              </div>
+              <h3>Academic Distinction - University Gold Medalist</h3>
+              <p>Achieved the top rank across Gujarat Technological University (GTU) in Computer Science Engineering, securing the highest GPA among all students. This academic distinction reflects mastery of core engineering principles, algorithms, data structures, and software development methodologies. The achievement demonstrates not just intellectual capability but disciplined study habits, competitive excellence, and a strong foundation that continues to inform professional decision-making and problem-solving approaches in quality assurance and software testing.</p>
+            </div>
+            <div class="achievement-card">
+              <h3>Global Programming Challenge - IEEE Xtreme</h3>
+              <p>Participated in IEEE Xtreme, the prestigious 24-hour global programming competition that brings together thousands of students from around the world. Collaborated with team members to solve complex algorithmic challenges under time pressure, demonstrating problem-solving skills, coding proficiency, and ability to work effectively in high-pressure environments. This experience honed technical abilities, teamwork, and competitive programming skills that continue to benefit professional development in software quality assurance.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- EDUCATION SECTION -->
-      <section class="education" id="education">
+      <section class="certifications" id="certifications">
         <div class="section-container">
-          <h2 class="section-title">Education</h2>
-          <div class="education-grid">
-            <div class="education-card">
-              <h3>Master of Engineering</h3>
-              <p class="school">Lakehead University</p>
-              <p class="details">Electrical & Computer Engineering • 2024 – 2025</p>
-              <p>Agile Software Development, Software Construction, Machine Learning Applications</p>
+          <h2 class="section-title">Certifications</h2>
+          <div class="certifications-carousel">
+            <div class="carousel-track">
+              <div class="certification-item">
+                <img src="images/tcs certi.jpg" alt="TCS Certification" />
+              </div>
+              <div class="certification-item">
+                <img src="images/Screenshot 2026-05-14 151550.png" alt="Certification 1" />
+              </div>
+              <div class="certification-item">
+                <img src="images/Screenshot 2026-05-14 152116.png" alt="Certification 2" />
+              </div>
+              <div class="certification-item">
+                <img src="images/certi 2.png" alt="Certification 3" />
+              </div>
+              <div class="certification-item">
+                <img src="images/certi 5.png" alt="Certification 4" />
+              </div>
+              <div class="certification-item">
+                <img src="images/certi 6.png" alt="Certification 5" />
+              </div>
+              <div class="certification-item">
+                <img src="images/certi 7.png" alt="Certification 6" />
+              </div>
             </div>
-            <div class="education-card">
-              <h3>Bachelor of Engineering</h3>
-              <p class="school">Gujarat Technological University</p>
-              <p class="details">Computer Engineering • 2017 – 2021</p>
-              <p>Certificate of Distinction — 3rd Rank in Batch</p>
-            </div>
+            <button class="carousel-arrow carousel-arrow-prev" id="prevBtn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            <button class="carousel-arrow carousel-arrow-next" id="nextBtn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
           </div>
         </div>
       </section>
 
-      <!-- CONTACT SECTION -->
       <section class="contact" id="contact">
         <div class="section-container">
-          <h2 class="section-title">Let's Connect</h2>
+          <h2 class="section-title">Get in Touch</h2>
           <p class="contact-intro">I'm always interested in hearing about new opportunities and challenges.</p>
-          <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:maitripatel2712@gmail.com">maitripatel2712@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+18073576262">+1 807-357-6262</a></p>
-            <p><strong>Location:</strong> Ottawa, Ontario, Canada</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/maitri-patel" target="_blank">linkedin.com/in/maitri-patel</a></p>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <p><strong>Email:</strong> <a href="mailto:maitripatel2712@gmail.com">maitripatel2712@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+18073576262">+1 807-357-6262</a></p>
+              <p><strong>Location:</strong> Ottawa, Ontario, Canada</p>
+              <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/maitri-patel-41944a191/" target="_blank">linkedin.com/in/maitri-patel</a></p>
+              <p><strong>GitHub:</strong> <a href="https://github.com/maitri2712" target="_blank">github.com/maitri2712</a></p>
+            </div>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required />
+              </div>
+              <div class="form-row">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Project or role" required />
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your company" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p class="form-message" id="contactMessage"></p>
+            </form>
           </div>
         </div>
       </section>

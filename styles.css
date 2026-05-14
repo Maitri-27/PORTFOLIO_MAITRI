@@ -839,11 +839,6 @@ main > section.active {
   justify-content: center;
 }
 
-.timeline-content h3 {
-  color: var(--accent-light);
-  margin-bottom: 0.5rem;
-}
-
 .company {
   color: var(--text);
   font-weight: 600;
